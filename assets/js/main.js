@@ -41,6 +41,25 @@ document.documentElement.classList.add('js');
     });
   }
 
+  /* ---------- One-page menu: highlight the section you're in ---------- */
+  var spyLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a[href^="#"]'));
+  if (spyLinks.length && 'IntersectionObserver' in window) {
+    var byId = {};
+    spyLinks.forEach(function (a) {
+      var sec = document.getElementById(a.getAttribute('href').slice(1));
+      if (sec) byId[sec.id] = a;
+    });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        spyLinks.forEach(function (a) { a.removeAttribute('aria-current'); });
+        var link = byId[e.target.id];
+        if (link) link.setAttribute('aria-current', 'location');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    Object.keys(byId).forEach(function (id) { spy.observe(document.getElementById(id)); });
+  }
+
   /* ---------- Live South African clock and date ---------- */
   var tz = 'Africa/Johannesburg';
   var timeFmt = new Intl.DateTimeFormat('en-GB', {

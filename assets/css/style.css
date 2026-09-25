@@ -5,6 +5,8 @@
    ========================================================== */
 
 /* Fonts bundled with the site (SIL Open Font License) */
+@font-face { font-family: "Arimo"; src: url("../fonts/arimo-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Arimo"; src: url("../fonts/arimo-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
 @font-face { font-family: "Bebas Neue"; src: url("../fonts/bebas-neue-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "DM Sans"; src: url("../fonts/dm-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "DM Sans"; src: url("../fonts/dm-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500 600; font-style: normal; font-display: swap; }
@@ -38,7 +40,8 @@
   --shadow: 0 1px 2px rgba(11, 31, 21, .04), 0 12px 32px -12px rgba(11, 31, 21, .12);
   --shadow-lift: 0 2px 4px rgba(11, 31, 21, .05), 0 24px 48px -16px rgba(30, 154, 82, .22);
 
-  --font-display: "Bebas Neue", "Oswald", Impact, "Arial Narrow", sans-serif;
+  --font-display: "Arimo", "Helvetica Neue", Arial, sans-serif;
+  --font-clock: "Bebas Neue", "Arial Narrow", sans-serif;
   --font-body: "DM Sans", "Segoe UI", Arial, sans-serif;
 
   --container: 1240px;
@@ -134,16 +137,16 @@ p { margin: 0 0 1em; }
   opacity: .82; transition: opacity .2s, color .2s;
   position: relative; padding: 6px 0;
 }
-.nav a:hover, .nav a[aria-current="page"] { opacity: 1; }
-.nav a[aria-current="page"]::after {
+.nav a:hover, .nav a[aria-current] { opacity: 1; }
+.nav a[aria-current]::after {
   content: ""; position: absolute; left: 0; right: .24em; bottom: -2px; height: 1.5px; background: var(--green-bright);
 }
-.site-header.scrolled .nav a[aria-current="page"]::after { background: var(--green); }
+.site-header.scrolled .nav a[aria-current]::after { background: var(--green); }
 .nav .nav-cta {
   border: 1.5px solid currentColor; border-radius: 999px; padding: 10px 20px; opacity: 1;
 }
 .nav .nav-cta:hover { background: var(--green); border-color: var(--green); color: #fff; }
-.nav .nav-cta[aria-current="page"]::after { display: none; }
+.nav .nav-cta[aria-current]::after { display: none; }
 
 .nav-toggle {
   display: none; background: none; border: 0; color: inherit; cursor: pointer;
@@ -547,7 +550,7 @@ a.card.blue .more { color: var(--blue); }
   .flow li:nth-child(3)::after { display: none; }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1180px) {
   .nav-toggle { display: inline-grid; place-items: center; }
   .nav {
     position: fixed; inset: 0; z-index: 150;
@@ -559,17 +562,20 @@ a.card.blue .more { color: var(--blue); }
   }
   .nav.open { transform: none; visibility: visible; }
   .nav a { font-family: var(--font-display); font-size: 3rem; letter-spacing: .04em; text-transform: none; font-weight: 400; }
-  .nav a[aria-current="page"]::after { background: var(--green-bright); }
+  .nav a[aria-current]::after { background: var(--green-bright); }
   .nav .nav-cta { font-size: 1.1rem; font-family: var(--font-body); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-top: 1rem; }
   .nav-close { position: absolute; top: 22px; right: var(--gutter); }
-  .site-header.scrolled .nav a[aria-current="page"]::after { background: var(--green-bright); }
+  .site-header.scrolled .nav a[aria-current]::after { background: var(--green-bright); }
 
+}
+
+@media (max-width: 960px) {
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .innovation { grid-template-columns: 1fr; }
   .founder { grid-template-columns: 1fr; }
 }
 
-@media (min-width: 961px) { .nav-close { display: none; } }
+@media (min-width: 1181px) { .nav-close { display: none; } }
 
 @media (max-width: 720px) {
   body { font-size: 1rem; }
@@ -659,7 +665,7 @@ body {
   color: rgba(255,255,255,.62);
 }
 .clock-big {
-  font-family: var(--font-display);
+  font-family: var(--font-clock);
   font-size: clamp(5rem, 9vw, 8.6rem);
   line-height: .86; letter-spacing: 0;
   margin: 18px 0 14px;
@@ -674,7 +680,7 @@ body {
 .clock-meta {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 18px;
   border-top: 1px solid rgba(255,255,255,.14); padding-top: 14px;
-  font-family: var(--font-display); font-size: 1.45rem; letter-spacing: .08em;
+  font-family: var(--font-clock); font-size: 1.45rem; letter-spacing: .08em;
   color: rgba(255,255,255,.88);
 }
 .clock-meta .tz { color: var(--amber-bright); }
@@ -687,3 +693,33 @@ body {
   .clock-big { font-size: clamp(4.4rem, 26vw, 7rem); }
   .clock-meta { font-size: 1.2rem; }
 }
+
+/* ==========================================================
+   Lovable-style lettering: large Title-Case, Arial-style (Arimo)
+   ========================================================== */
+h1, h2, h3, h4 { letter-spacing: 0.005em; line-height: 1.05; }
+.brand-text strong { font-size: 1.55rem; letter-spacing: .22em; }
+.hero h1 { font-size: clamp(3.1rem, 8.4vw, 8.6rem); line-height: .96; letter-spacing: 0; max-width: none; }
+.hero-page h1 { font-size: clamp(2.8rem, 6.6vw, 6rem); }
+.display { font-size: clamp(2.6rem, 5.6vw, 4.8rem); line-height: 1.04; letter-spacing: 0; }
+.card h3 { font-size: 1.6rem; letter-spacing: 0; }
+.card-num { font-size: 2.2rem; }
+.innovation-top .n { font-size: 2rem; }
+.innovation h2 { font-size: clamp(2rem, 3.6vw, 3.1rem); line-height: 1.08; }
+.flow .step { font-size: 1rem; }
+.flow strong { font-size: 1.05rem; line-height: 1.25; letter-spacing: 0; }
+.number .v { font-size: clamp(2.6rem, 4.2vw, 3.6rem); line-height: 1; letter-spacing: -0.01em; }
+.timeline .when { font-size: 1.15rem; letter-spacing: .02em; }
+.timeline h3 { font-size: 1.6rem; }
+.founder-bio .quote { font-size: clamp(1.9rem, 3.4vw, 3rem); line-height: 1.16; letter-spacing: 0; }
+.founder-card h3 { font-size: clamp(2.2rem, 3.6vw, 3rem); line-height: 1.08; }
+.principle h3 { font-size: 1.35rem; letter-spacing: 0; }
+.partner h3 { font-size: 1.65rem; letter-spacing: 0; }
+.not-found .code { font-family: var(--font-clock); }
+@media (max-width: 1180px) { .nav a { font-size: 2.2rem; letter-spacing: 0; } }
+
+/* One-page layout */
+main section[id] { scroll-margin-top: 84px; }
+.hero-home .container { position: relative; }
+.hero-home .hero-grid { margin-top: 2.4rem; align-items: center; }
+.hero-home .hero-lead { margin-top: 0; }
