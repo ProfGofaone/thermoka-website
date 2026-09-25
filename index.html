@@ -3,301 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thermoka Green Energy — Solar-thermal vaccine cold storage</title>
+  <title>Thermoka Green Energy — Vaccine cold storage powered by the sun</title>
   <meta name="description" content="Thermoka Green Energy (Pty) Ltd is developing the Thermoka Solar-Thermal Absorption Clinic Cooler: off-grid vaccine refrigeration powered by the sun, for rural clinics across the Global South.">
-  <meta name="theme-color" content="#0e1f16">
-  <meta property="og:title" content="Thermoka Green Energy">
-  <meta property="og:description" content="Vaccine cold storage powered by the sun, not the grid.">
+  <meta name="theme-color" content="#0f5a1e">
+  <meta property="og:title" content="Thermoka Green Energy — Vaccine cold storage powered by the sun">
+  <meta property="og:description" content="Thermoka Green Energy (Pty) Ltd is developing the Thermoka Solar-Thermal Absorption Clinic Cooler: off-grid vaccine refrigeration powered by the sun, for rural clinics across the Global South.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="brand-stripe"></div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Thermoka Green Energy — home">
-        <img src="assets/img/mark.png" alt="" width="44" height="44">
+        <img src="assets/img/mark.png" alt="" width="46" height="46">
         <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
+        <button class="nav-toggle nav-close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
         <a href="index.html" aria-current="page">Home</a>
         <a href="thermoka.html">The Cooler</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="nav-cta">Contact us</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">Solar-thermal cold chain</span>
-          <h1>Vaccine cold storage <span class="accent">powered by the sun</span> — not the grid.</h1>
-          <p class="lead">Thermoka Green Energy is developing the Thermoka Cooler: an off-grid vaccine refrigerator that runs on stored solar heat, built for rural clinics across the Global South.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="thermoka.html">
-              Discover the Thermoka Cooler
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn-outline" href="contact.html">Partner with us</a>
+    <section class="panel ph-green " style="--photo:url('assets/img/photos/home-hero.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">Solar-thermal cold chain</span>
+          <h1 class="reveal delay-1">Vaccine cold storage powered by the sun</h1>
+          <p class="reveal delay-1">The Thermoka Cooler is an off-grid vaccine refrigerator that runs on stored solar heat, built for rural clinics across the Global South.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="thermoka.html">Discover Thermoka <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <div class="status-bar reveal delay-2" aria-label="Local time in Pampierstad, South Africa">
+            <span class="status-item"><span class="live-dot" aria-hidden="true"></span>Pampierstad, Northern Cape</span>
+            <span class="status-item"><b data-clock="date">&nbsp;</b></span>
+            <span class="status-item"><b data-clock="time" class="clock-time">--:--:--</b> SAST</span>
           </div>
         </div>
-
-        <figure class="diagram-card" style="margin:0">
-          <svg viewBox="0 0 600 440" role="img" aria-labelledby="dgm-title dgm-desc">
-            <title id="dgm-title">How the Thermoka Cooler works</title>
-            <desc id="dgm-desc">A solar collector captures heat, which is kept in a hot phase-change store. That heat drives a lithium-bromide absorption cycle. The cold it produces is held in a cold phase-change store that keeps the vaccine chamber between 2 and 8 degrees Celsius. A smart controller supervises the system.</desc>
-            <defs>
-              <marker id="arrow-o" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#f06a0a"/></marker>
-              <marker id="arrow-b" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4.5" markerHeight="4.5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0074c7"/></marker>
-            </defs>
-
-            <!-- Sun -->
-            <circle cx="76" cy="58" r="28" fill="#fab005"/>
-            <g stroke="#f06a0a" stroke-width="4" stroke-linecap="round">
-              <path d="M112 58h10M101.5 83.5l7 7M76 94v10M50.5 83.5l-7 7M40 58H30M50.5 32.5l-7-7M76 22V12M101.5 32.5l7-7"/>
-            </g>
-
-            <!-- Collector -->
-            <g transform="rotate(-12 125 160)">
-              <rect x="45" y="142" width="160" height="36" rx="5" fill="#0e1f16"/>
-              <g stroke="#f06a0a" stroke-width="3" stroke-linecap="round">
-                <path d="M65 149v22M85 149v22M105 149v22M125 149v22M145 149v22M165 149v22M185 149v22"/>
-              </g>
-            </g>
-            <text x="116" y="222" text-anchor="end" font-size="12.5" font-weight="600" fill="#56655b">Solar</text>
-            <text x="116" y="238" text-anchor="end" font-size="12.5" font-weight="600" fill="#56655b">collector</text>
-
-            <!-- Controller -->
-            <rect x="240" y="66" width="120" height="70" rx="10" fill="#ffffff" stroke="#24a333" stroke-width="2"/>
-            <text x="300" y="93" text-anchor="middle" font-size="12" font-weight="800" fill="#17772a" letter-spacing="1">SMART</text>
-            <text x="300" y="108" text-anchor="middle" font-size="12" font-weight="800" fill="#17772a" letter-spacing="1">CONTROL</text>
-            <text x="300" y="125" text-anchor="middle" font-size="10.5" font-weight="600" fill="#56655b">PLC + predictive</text>
-            <g stroke="#24a333" stroke-width="2" stroke-dasharray="4 5" fill="none">
-              <path d="M300 136v114M360 101h50"/>
-            </g>
-
-            <!-- Pipes -->
-            <path d="M128 180v82" stroke="#f06a0a" stroke-width="5" fill="none" marker-end="url(#arrow-o)"/>
-            <path d="M190 330h26" stroke="#f06a0a" stroke-width="5" fill="none" marker-end="url(#arrow-o)"/>
-            <path d="M375 330h26" stroke="#0074c7" stroke-width="5" fill="none" marker-end="url(#arrow-b)"/>
-            <path d="M485 270v-52" stroke="#0074c7" stroke-width="5" fill="none" marker-end="url(#arrow-b)"/>
-
-            <!-- Hot store -->
-            <rect x="40" y="270" width="150" height="120" rx="14" fill="#ffe9d9" stroke="#f06a0a" stroke-width="2.5"/>
-            <text x="115" y="316" text-anchor="middle" font-size="13" font-weight="800" fill="#b84a00" letter-spacing="1">HOT STORE</text>
-            <text x="115" y="336" text-anchor="middle" font-size="12" fill="#56655b">Phase-change</text>
-            <text x="115" y="351" text-anchor="middle" font-size="12" fill="#56655b">material</text>
-            <path d="M60 372q10-8 20 0t20 0t20 0t20 0t20 0t10 0" stroke="#f06a0a" stroke-width="2" fill="none" opacity="0.6"/>
-
-            <!-- Absorption unit -->
-            <rect x="225" y="250" width="150" height="160" rx="14" fill="#0e1f16"/>
-            <text x="300" y="306" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="1">ABSORPTION</text>
-            <text x="300" y="323" text-anchor="middle" font-size="13" font-weight="800" fill="#ffffff" letter-spacing="1">CYCLE</text>
-            <text x="300" y="347" text-anchor="middle" font-size="12" fill="#a9bbae">Lithium bromide</text>
-            <circle cx="290" cy="378" r="10" fill="none" stroke="#f06a0a" stroke-width="3"/>
-            <circle cx="310" cy="378" r="10" fill="none" stroke="#0074c7" stroke-width="3"/>
-
-            <!-- Cold store -->
-            <rect x="410" y="270" width="150" height="120" rx="14" fill="#dcedfa" stroke="#0074c7" stroke-width="2.5"/>
-            <text x="485" y="316" text-anchor="middle" font-size="13" font-weight="800" fill="#00548f" letter-spacing="1">COLD STORE</text>
-            <text x="485" y="336" text-anchor="middle" font-size="12" fill="#56655b">Phase-change</text>
-            <text x="485" y="351" text-anchor="middle" font-size="12" fill="#56655b">material</text>
-            <path d="M430 372q10-8 20 0t20 0t20 0t20 0t20 0t10 0" stroke="#0074c7" stroke-width="2" fill="none" opacity="0.6"/>
-
-            <!-- Vaccine chamber -->
-            <rect x="410" y="40" width="150" height="170" rx="14" fill="#ffffff" stroke="#0e1f16" stroke-width="3"/>
-            <text x="485" y="70" text-anchor="middle" font-size="12" font-weight="800" fill="#0e1f16" letter-spacing="1">VACCINE</text>
-            <text x="485" y="86" text-anchor="middle" font-size="12" font-weight="800" fill="#0e1f16" letter-spacing="1">CHAMBER</text>
-            <text x="485" y="132" text-anchor="middle" font-size="34" font-weight="800" fill="#0074c7">2–8°C</text>
-            <g fill="#dcedfa" stroke="#0074c7" stroke-width="1.5">
-              <rect x="435" y="160" width="12" height="32" rx="4"/>
-              <rect x="457" y="160" width="12" height="32" rx="4"/>
-              <rect x="479" y="160" width="12" height="32" rx="4"/>
-              <rect x="501" y="160" width="12" height="32" rx="4"/>
-              <rect x="523" y="160" width="12" height="32" rx="4"/>
-            </g>
-            <g fill="#0e1f16">
-              <rect x="435" y="154" width="12" height="7" rx="2"/>
-              <rect x="457" y="154" width="12" height="7" rx="2"/>
-              <rect x="479" y="154" width="12" height="7" rx="2"/>
-              <rect x="501" y="154" width="12" height="7" rx="2"/>
-              <rect x="523" y="154" width="12" height="7" rx="2"/>
-            </g>
-
-            <!-- Step badges -->
-            <g stroke="#ffffff" stroke-width="3" font-size="13" font-weight="800" text-anchor="middle">
-              <circle cx="216" cy="118" r="14" fill="#f06a0a"/>
-              <circle cx="40" cy="270" r="14" fill="#b84a00"/>
-              <circle cx="225" cy="250" r="14" fill="#0e1f16"/>
-              <circle cx="410" cy="270" r="14" fill="#0074c7"/>
-            </g>
-            <g fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle">
-              <text x="216" y="122.5">1</text>
-              <text x="40" y="274.5">2</text>
-              <text x="225" y="254.5">3</text>
-              <text x="410" y="274.5">4</text>
-            </g>
-          </svg>
-          <figcaption>How Thermoka works: sunlight is captured as heat, stored, converted into cold, and held around the vaccines.</figcaption>
-        </figure>
+      </div>
+      <a class="scroll-cue" href="#next" aria-label="Scroll down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+    </section>
+    <section id="next" class="panel ph-blue " style="--photo:url('assets/img/photos/clinic.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">The problem</span>
+          <h2 class="reveal delay-1">The last mile is where the cold chain breaks</h2>
+          <p class="reveal delay-1">Vaccines must stay between 2&nbsp;°C and 8&nbsp;°C from factory to patient. In clinics without reliable power, that chain fails and doses are lost.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="about.html">Our mission <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
       </div>
     </section>
-
-    <!-- At a glance -->
-    <section class="section-dark section-tight" aria-labelledby="glance-title">
+    <section class="numbers" aria-label="Thermoka by the numbers">
       <div class="container">
-        <span id="glance-title" class="eyebrow" style="margin-bottom:28px">Thermoka at a glance</span>
-        <div class="stats">
-          <div class="stat">
-            <div class="stat-value">2–8°C</div>
-            <div class="stat-label">Vaccine storage range</div>
+        <span class="label reveal">Thermoka by the numbers</span>
+        <div class="numbers-grid">
+          <div class="number reveal">
+            <div class="number-value">R<span data-count="260000">260&nbsp;000</span></div>
+            <div class="number-label">TIA funding secured</div>
           </div>
-          <div class="stat">
-            <div class="stat-value">100<small>L</small></div>
-            <div class="stat-label">Target storage capacity</div>
+          <div class="number reveal delay-1">
+            <div class="number-value">$<span data-count="5000">5&nbsp;000</span></div>
+            <div class="number-label">BeGreen Africa seed funding</div>
           </div>
-          <div class="stat">
-            <div class="stat-value">LiBr</div>
-            <div class="stat-label">Lithium-bromide absorption cooling</div>
+          <div class="number reveal delay-2">
+            <div class="number-value"><span data-count="100">100</span><span class="unit">L</span></div>
+            <div class="number-label">Target storage capacity</div>
           </div>
-          <div class="stat">
-            <div class="stat-value">PQS</div>
-            <div class="stat-label">Designed toward WHO PQS E003</div>
+          <div class="number reveal delay-3">
+            <div class="number-value"><span data-count="2">2</span>–<span data-count="8">8</span><span class="unit">°C</span></div>
+            <div class="number-label">Vaccine storage range</div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- The problem -->
-    <section class="section section-white" aria-labelledby="problem-title">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">The problem</span>
-          <h2 id="problem-title">The last mile is where the cold chain breaks.</h2>
-          <p class="lead">Vaccines must stay between 2 °C and 8 °C from the factory to the patient. In off-grid and rural clinics, that chain often fails exactly where it matters most.</p>
+    <section class="panel ph-orange " style="--photo:url('assets/img/photos/collectors.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">The technology</span>
+          <h2 class="reveal delay-1">Heat in. Cold out.</h2>
+          <p class="reveal delay-1">A lithium-bromide absorption cycle turns stored solar heat into cooling, with no compressor, built to run without the grid.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="thermoka.html">How it works <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
-        <ul class="point-list">
-          <li>
-            <span class="point-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v5M15 2v5M6 7h12v4a6 6 0 0 1-12 0V7zM12 17v5"/><path d="M3 3l18 18"/></svg>
-            </span>
-            <div>
-              <h3>No reliable power</h3>
-              <p>Many rural clinics have no grid connection at all, or one that fails for hours at a time.</p>
-            </div>
-          </li>
-          <li>
-            <span class="point-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V4.5a2.5 2.5 0 0 0-5 0v10.26a4.5 4.5 0 1 0 5 0z"/><path d="M11.5 10v7"/></svg>
-            </span>
-            <div>
-              <h3>Temperature is unforgiving</h3>
-              <p>Vaccines exposed to too much heat, or to freezing, can lose their potency — often with no visible sign.</p>
-            </div>
-          </li>
-          <li>
-            <span class="point-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2l4 4M17 7l3-3M19 9L8.7 19.3a2.4 2.4 0 0 1-3.4 0l-.6-.6a2.4 2.4 0 0 1 0-3.4L15 5M9 11l4 4M5 19l-3 3M14 4l6 6"/></svg>
-            </span>
-            <div>
-              <h3>Communities miss out</h3>
-              <p>When stock spoils, immunisations are missed and scarce health budgets are wasted.</p>
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
-
-    <!-- How it works -->
-    <section class="section section-paper" aria-labelledby="how-title">
+    <section class="panel ph-mid " style="--photo:url('assets/img/photos/vaccines.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">The mission</span>
+          <h2 class="reveal delay-1">Protecting every dose, in every clinic</h2>
+          <p class="reveal delay-1">Reliable, grid-independent vaccine storage for off-grid and rural clinics, in South Africa and across the Global South.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="about.html">About us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-white" aria-labelledby="support-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">How it works</span>
-          <h2 id="how-title">From sunlight to 2–8 °C, without the grid.</h2>
-          <p>Thermoka stores the sun's energy as heat, then uses that heat to make cold — so it keeps working through the night and on cloudy days.</p>
+          <span class="label reveal">Supported by</span>
+          <h2 id="support-title" class="reveal delay-1">Backed to build</h2>
         </div>
-        <div class="steps">
-          <div class="step">
-            <div class="step-num">1</div>
-            <h3>Collect</h3>
-            <p>Solar thermal collectors capture heat from sunlight.</p>
+        <div class="supporters">
+          <div class="supporter reveal">
+            <div class="kind">Funding · R260&nbsp;000</div>
+            <h3>Technology Innovation Agency</h3>
+            <p>Funding through TIA's Grassroots Innovation Programme to build the first working Thermoka prototype.</p>
           </div>
-          <div class="step">
-            <div class="step-num">2</div>
-            <h3>Store heat</h3>
-            <p>Surplus heat is banked in a hot phase-change store for later use.</p>
+          <div class="supporter reveal delay-1">
+            <div class="kind">Seed funding · $5&nbsp;000</div>
+            <h3>BeGreen Africa</h3>
+            <p>The Tony Elumelu Foundation's green-entrepreneurship programme with UNICEF's Generation Unlimited.</p>
           </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <h3>Make cold</h3>
-            <p>A lithium-bromide absorption cycle turns that heat into cooling — no mechanical compressor.</p>
-          </div>
-          <div class="step">
-            <div class="step-num">4</div>
-            <h3>Keep cold</h3>
-            <p>A cold phase-change store holds the vaccine chamber at 2–8 °C, day and night.</p>
-          </div>
-        </div>
-        <a class="more-link" href="thermoka.html">
-          Explore the full design
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Backed by -->
-    <section class="section section-dark" aria-labelledby="backed-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Backed by</span>
-          <h2 id="backed-title">Recognised and funded to build.</h2>
-          <p>Thermoka has secured public innovation funding and competition seed capital to move from design to a working prototype.</p>
-        </div>
-        <div class="backers">
-          <div class="backer">
-            <div class="backer-amount">R260,000</div>
-            <h3>Technology Innovation Agency (TIA)</h3>
-            <p>Funding secured through TIA's Grassroots Innovation Programme to build the first working Thermoka prototype, with Red Village Trading appointed by TIA as implementing partner.</p>
-          </div>
-          <div class="backer">
-            <div class="backer-amount">$5,000</div>
-            <h3>Pan-African green entrepreneurship competition</h3>
-            <p>Thermoka won seed funding as a winner of a pan-African competition for green entrepreneurs.</p>
+          <div class="supporter reveal delay-2">
+            <div class="kind">Implementing partner</div>
+            <h3>Red Village Trading</h3>
+            <p>Appointed by TIA as implementing partner for the Thermoka prototype project.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- CTA -->
-    <section class="section section-white">
-      <div class="container">
-        <div class="cta-band">
-          <div>
-            <h2>Help take Thermoka from prototype to clinic.</h2>
-            <p>We're looking for partners, funders, health programmes and engineers who want to close the cold-chain gap.</p>
-          </div>
-          <div class="btn-row">
-            <a class="btn btn-light" href="contact.html">Get in touch</a>
-            <a class="btn btn-outline-light" href="about.html">About the company</a>
-          </div>
+    <section class="panel ph-green panel-center panel-short" style="--photo:url('assets/img/photos/workshop.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">Join us</span>
+          <h2 class="reveal delay-1">Help build the cold chain that doesn't need the grid</h2>
+          <p class="reveal delay-1">We're looking for partners, funders, health programmes and engineers.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="contact.html">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -305,7 +157,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">
-            <img src="assets/img/mark.png" alt="" width="52" height="52">
+            <img src="assets/img/mark.png" alt="" width="54" height="54">
             <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
           </div>
           <p>Solar-thermal cold storage for off-grid and rural clinics across the Global South.</p>
@@ -323,13 +175,13 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="mailto:gofaonemokalabae38@gmail.com">gofaonemokalabae38@gmail.com</a></li>
-            <li>Pampierstad, Northern Cape</li>
-            <li>South Africa</li>
+            <li>Pampierstad, Northern Cape, South Africa</li>
+            <li>Local time: <span class="footer-clock" data-clock="time">--:--:--</span> SAST</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Thermoka Green Energy (Pty) Ltd. All rights reserved.</span>
+        <span>© 2026 Thermoka Green Energy (Pty) Ltd</span>
         <span>Proudly developed in the Northern Cape, South Africa</span>
       </div>
     </div>

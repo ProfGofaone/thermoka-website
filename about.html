@@ -5,145 +5,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About — Thermoka Green Energy</title>
   <meta name="description" content="Thermoka Green Energy (Pty) Ltd is a South African green-technology company from the Northern Cape, fighting cold-chain failure in off-grid and rural clinics.">
-  <meta name="theme-color" content="#0e1f16">
-  <meta property="og:title" content="About Thermoka Green Energy">
-  <meta property="og:description" content="A South African green-technology company, built in the Northern Cape.">
+  <meta name="theme-color" content="#0f5a1e">
+  <meta property="og:title" content="About — Thermoka Green Energy">
+  <meta property="og:description" content="Thermoka Green Energy (Pty) Ltd is a South African green-technology company from the Northern Cape, fighting cold-chain failure in off-grid and rural clinics.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="brand-stripe"></div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Thermoka Green Energy — home">
-        <img src="assets/img/mark.png" alt="" width="44" height="44">
+        <img src="assets/img/mark.png" alt="" width="46" height="46">
         <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
+        <button class="nav-toggle nav-close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
         <a href="index.html">Home</a>
         <a href="thermoka.html">The Cooler</a>
         <a href="about.html" aria-current="page">About</a>
-        <a href="contact.html" class="nav-cta">Contact us</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">About us</span>
-        <h1>A South African green-technology company, built in the Northern Cape.</h1>
-        <p class="lead">Thermoka Green Energy (Pty) Ltd develops clean-energy technology for the places the power grid doesn't reliably reach.</p>
-      </div>
-    </section>
-
-    <!-- Mission -->
-    <section class="section section-white" aria-labelledby="mission-title">
-      <div class="container split" style="align-items:center">
-        <div>
-          <span class="eyebrow">Our mission</span>
-          <h2 id="mission-title">Ending cold-chain failure at the last mile.</h2>
-          <p class="lead">We exist to fight cold-chain failure in off-grid and rural clinics across the Global South — in South Africa and beyond.</p>
-          <p class="text-muted">Our flagship project, the Thermoka Solar-Thermal Absorption Clinic Cooler, turns sunlight into dependable vaccine refrigeration without relying on the grid. It is the first of several clean-energy technologies Thermoka Green Energy is developing.</p>
-          <div class="founder">
-            <div class="founder-mark"><img src="assets/img/mark.png" alt="" width="40" height="40"></div>
-            <div>
-              <div class="founder-name">Gofaone Mokalabae</div>
-              <div class="founder-role">Founder, Thermoka Green Energy (Pty) Ltd</div>
-            </div>
+    <section class="panel ph-green " style="--photo:url('assets/img/photos/northern-cape.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">About us</span>
+          <h1 class="reveal delay-1">Built in the Northern Cape</h1>
+          <p class="reveal delay-1">Thermoka Green Energy (Pty) Ltd is a South African green-technology company developing clean energy for places the power grid doesn't reliably reach.</p>
+          <div class="status-bar reveal delay-2" aria-label="Local time in Pampierstad, South Africa">
+            <span class="status-item"><span class="live-dot" aria-hidden="true"></span>Pampierstad, Northern Cape</span>
+            <span class="status-item"><b data-clock="date">&nbsp;</b></span>
+            <span class="status-item"><b data-clock="time" class="clock-time">--:--:--</b> SAST</span>
           </div>
         </div>
-        <div class="logo-panel">
+      </div>
+      <a class="scroll-cue" href="#next" aria-label="Scroll down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+    </section>
+    <section id="next" class="section section-white" aria-labelledby="mission-title">
+      <div class="container split">
+        <div>
+          <span class="label reveal">Our mission</span>
+          <h2 id="mission-title" class="reveal delay-1">Ending cold-chain failure at the last mile</h2>
+          <p class="lead reveal delay-1">We exist to fight cold-chain failure in off-grid and rural clinics across the Global South, in South Africa and beyond.</p>
+          <p class="text-muted reveal delay-2">Our flagship project, the Thermoka Solar-Thermal Absorption Clinic Cooler, turns sunlight into dependable vaccine refrigeration without relying on the grid. It is the first of several clean-energy technologies Thermoka Green Energy is developing.</p>
+          <div class="founder reveal delay-2">
+            <div class="founder-name">Gofaone Mokalabae</div>
+            <div class="founder-role">Founder, Thermoka Green Energy (Pty) Ltd</div>
+          </div>
+        </div>
+        <div class="logo-panel reveal delay-1">
           <img src="assets/img/logo-full.png" alt="Thermoka Green Energy logo" width="729" height="677">
         </div>
       </div>
     </section>
-
-    <!-- Support & milestones -->
+    <section class="numbers" aria-label="Thermoka by the numbers">
+      <div class="container">
+        <span class="label reveal">Thermoka by the numbers</span>
+        <div class="numbers-grid">
+          <div class="number reveal">
+            <div class="number-value">R<span data-count="260000">260&nbsp;000</span></div>
+            <div class="number-label">TIA funding secured</div>
+          </div>
+          <div class="number reveal delay-1">
+            <div class="number-value">$<span data-count="5000">5&nbsp;000</span></div>
+            <div class="number-label">BeGreen Africa seed funding</div>
+          </div>
+          <div class="number reveal delay-2">
+            <div class="number-value"><span data-count="100">100</span><span class="unit">L</span></div>
+            <div class="number-label">Target storage capacity</div>
+          </div>
+          <div class="number reveal delay-3">
+            <div class="number-value"><span data-count="2">2</span>–<span data-count="8">8</span><span class="unit">°C</span></div>
+            <div class="number-label">Vaccine storage range</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="section section-paper" aria-labelledby="support-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Support &amp; milestones</span>
-          <h2 id="support-title">Backed to build the first prototype.</h2>
+          <span class="label reveal">Support &amp; milestones</span>
+          <h2 id="support-title" class="reveal delay-1">Backed to build the first prototype</h2>
         </div>
-        <div class="support-grid">
-          <div class="support-card">
-            <span class="tag">Funding</span>
-            <div class="figure">R260,000</div>
+        <div class="supporters">
+          <div class="supporter reveal">
+            <div class="kind">Funding · R260&nbsp;000</div>
             <h3>Technology Innovation Agency</h3>
-            <p>Secured through TIA's Grassroots Innovation Programme to build the first working Thermoka prototype.</p>
+            <p>Funding through TIA's Grassroots Innovation Programme to build the first working Thermoka prototype.</p>
           </div>
-          <div class="support-card">
-            <span class="tag">Partner</span>
-            <div class="figure" style="font-size:1.6rem;line-height:1.15">Red Village Trading</div>
-            <h3>Implementing partner</h3>
-            <p>Appointed by TIA as the implementing partner for the Thermoka prototype project.</p>
+          <div class="supporter reveal delay-1">
+            <div class="kind">Seed funding · $5&nbsp;000</div>
+            <h3>BeGreen Africa</h3>
+            <p>The Tony Elumelu Foundation's green-entrepreneurship programme with UNICEF's Generation Unlimited.</p>
           </div>
-          <div class="support-card">
-            <span class="tag">Award</span>
-            <div class="figure">$5,000</div>
-            <h3>Competition winner</h3>
-            <p>Seed funding won in a pan-African competition for green entrepreneurs.</p>
+          <div class="supporter reveal delay-2">
+            <div class="kind">Implementing partner</div>
+            <h3>Red Village Trading</h3>
+            <p>Appointed by TIA as implementing partner for the Thermoka prototype project.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Values -->
     <section class="section section-white" aria-labelledby="values-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">What guides us</span>
-          <h2 id="values-title">How we build.</h2>
+          <span class="label reveal">What guides us</span>
+          <h2 id="values-title" class="reveal delay-1">How we build</h2>
         </div>
-        <div class="value-list">
-          <div>
+        <div class="values">
+          <div class="reveal">
             <div class="bar" style="background:var(--orange)"></div>
             <h3>Built for the last mile</h3>
-            <p class="text-muted">We design for the conditions rural clinics actually face — unreliable power, heat, and long distances from support.</p>
+            <p>We design for the conditions rural clinics actually face: unreliable power, heat, and long distances from support.</p>
           </div>
-          <div>
+          <div class="reveal delay-1">
             <div class="bar" style="background:var(--blue)"></div>
             <h3>Clean by design</h3>
-            <p class="text-muted">Our technology runs on heat from the sun, not diesel generators or an unstable grid.</p>
+            <p>Our technology runs on heat from the sun, not diesel generators or an unstable grid.</p>
           </div>
-          <div>
+          <div class="reveal delay-2">
             <div class="bar" style="background:var(--green)"></div>
             <h3>Engineered to standard</h3>
-            <p class="text-muted">We work toward recognised standards like WHO PQS, so health programmes can trust what we deliver.</p>
+            <p>We work toward recognised standards like WHO PQS, so health programmes can trust what we deliver.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Beyond the cooler -->
-    <section class="section section-dark" style="background:#13281c" aria-labelledby="beyond-title">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">Beyond the cooler</span>
-          <h2 id="beyond-title">Thermoka is our flagship — not our only project.</h2>
-        </div>
-        <div>
-          <p class="lead" style="color:var(--on-dark)">Thermoka Green Energy is developing further clean-energy and resource technologies for underserved communities. We'll share them here as they mature.</p>
-          <p>We're also building our engineering team. If you're a mechanical, thermal or embedded-systems engineer who wants to help build and test the Thermoka prototype, we'd like to hear from you.</p>
-          <div class="btn-row" style="margin-top:28px">
-            <a class="btn btn-light" href="contact.html">Get in touch</a>
-          </div>
+    <section class="panel ph-mid panel-center panel-short" style="--photo:url('assets/img/photos/workshop.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">Beyond the cooler</span>
+          <h2 class="reveal delay-1">Thermoka is our flagship, not our only project</h2>
+          <p class="reveal delay-1">We're developing further clean-energy and resource technologies, and building our engineering team. Mechanical, thermal and embedded-systems engineers: we'd like to hear from you.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="contact.html">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -151,7 +166,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">
-            <img src="assets/img/mark.png" alt="" width="52" height="52">
+            <img src="assets/img/mark.png" alt="" width="54" height="54">
             <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
           </div>
           <p>Solar-thermal cold storage for off-grid and rural clinics across the Global South.</p>
@@ -169,13 +184,13 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="mailto:gofaonemokalabae38@gmail.com">gofaonemokalabae38@gmail.com</a></li>
-            <li>Pampierstad, Northern Cape</li>
-            <li>South Africa</li>
+            <li>Pampierstad, Northern Cape, South Africa</li>
+            <li>Local time: <span class="footer-clock" data-clock="time">--:--:--</span> SAST</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Thermoka Green Energy (Pty) Ltd. All rights reserved.</span>
+        <span>© 2026 Thermoka Green Energy (Pty) Ltd</span>
         <span>Proudly developed in the Northern Cape, South Africa</span>
       </div>
     </div>

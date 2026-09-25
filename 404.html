@@ -4,34 +4,92 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found — Thermoka Green Energy</title>
+  <meta name="description" content="This page could not be found.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0e1f16">
+  <meta name="theme-color" content="#0f5a1e">
+  <meta property="og:title" content="Page not found — Thermoka Green Energy">
+  <meta property="og:description" content="This page could not be found.">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="brand-stripe"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Thermoka Green Energy — home">
-        <img src="assets/img/mark.png" alt="" width="44" height="44">
+        <img src="assets/img/mark.png" alt="" width="46" height="46">
         <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
       </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <button class="nav-toggle nav-close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
+        <a href="index.html">Home</a>
+        <a href="thermoka.html">The Cooler</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
     </div>
   </header>
-  <main id="main" class="not-found">
+
+  <main id="main">
+    <section class="panel ph-green panel-center not-found" style="--photo:url('assets/img/photos/home-hero.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <div class="code">404</div>
+          <h1 style="font-size:clamp(2rem,4.5vw,3.4rem)">This page couldn't be found</h1>
+          <p>The link may be broken, or the page may have moved.</p>
+          <div class="btn-row"><a class="btn btn-white" href="index.html">Back to home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="code">404</div>
-      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">This page couldn't be found.</h1>
-      <p class="text-muted">The link may be broken, or the page may have moved.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="index.html">Back to home</a>
-        <a class="btn btn-outline" href="contact.html">Contact us</a>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="assets/img/mark.png" alt="" width="54" height="54">
+            <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
+          </div>
+          <p>Solar-thermal cold storage for off-grid and rural clinics across the Global South.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="thermoka.html">The Thermoka Cooler</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:gofaonemokalabae38@gmail.com">gofaonemokalabae38@gmail.com</a></li>
+            <li>Pampierstad, Northern Cape, South Africa</li>
+            <li>Local time: <span class="footer-clock" data-clock="time">--:--:--</span> SAST</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Thermoka Green Energy (Pty) Ltd</span>
+        <span>Proudly developed in the Northern Cape, South Africa</span>
       </div>
     </div>
-  </main>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

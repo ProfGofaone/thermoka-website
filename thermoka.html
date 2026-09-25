@@ -5,60 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Thermoka Cooler — Thermoka Green Energy</title>
   <meta name="description" content="The Thermoka Solar-Thermal Absorption Clinic Cooler: a lithium-bromide absorption refrigerator with dual thermal storage and predictive control, designed for off-grid vaccine storage.">
-  <meta name="theme-color" content="#0e1f16">
+  <meta name="theme-color" content="#0f5a1e">
   <meta property="og:title" content="The Thermoka Cooler — Thermoka Green Energy">
-  <meta property="og:description" content="Off-grid vaccine refrigeration that runs on stored solar heat.">
+  <meta property="og:description" content="The Thermoka Solar-Thermal Absorption Clinic Cooler: a lithium-bromide absorption refrigerator with dual thermal storage and predictive control, designed for off-grid vaccine storage.">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="brand-stripe"></div>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Thermoka Green Energy — home">
-        <img src="assets/img/mark.png" alt="" width="44" height="44">
+        <img src="assets/img/mark.png" alt="" width="46" height="46">
         <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
       </button>
       <nav class="nav" id="site-nav" aria-label="Main">
+        <button class="nav-toggle nav-close" type="button" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+        </button>
         <a href="index.html">Home</a>
         <a href="thermoka.html" aria-current="page">The Cooler</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="nav-cta">Contact us</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-
-    <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow">The Thermoka Cooler</span>
-        <h1>The Thermoka Solar-Thermal Absorption Clinic Cooler</h1>
-        <p class="lead">An off-grid vaccine refrigerator that runs on stored solar heat — designed for the clinics the power grid doesn't reliably reach.</p>
+    <section class="panel ph-orange " style="--photo:url('assets/img/photos/collectors.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">The Thermoka Cooler</span>
+          <h1 class="reveal delay-1">Solar-thermal absorption clinic cooler</h1>
+          <p class="reveal delay-1">An off-grid vaccine refrigerator that runs on stored solar heat, designed for clinics the power grid doesn't reliably reach.</p>
+          <div class="status-bar reveal delay-2" aria-label="Local time in Pampierstad, South Africa">
+            <span class="status-item"><span class="live-dot" aria-hidden="true"></span>Pampierstad, Northern Cape</span>
+            <span class="status-item"><b data-clock="date">&nbsp;</b></span>
+            <span class="status-item"><b data-clock="time" class="clock-time">--:--:--</b> SAST</span>
+          </div>
+        </div>
       </div>
+      <a class="scroll-cue" href="#next" aria-label="Scroll down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
     </section>
-
-    <!-- How it works -->
-    <section class="section section-white" aria-labelledby="how-title">
+    <section id="next" class="section section-white" aria-labelledby="how-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">How it works</span>
-          <h2 id="how-title">Heat in. Cold out. Stored for when the sun is down.</h2>
-          <p>Instead of an electric compressor, Thermoka uses heat to drive its cooling — and it banks both heat and cold, so the vaccines stay protected overnight and through cloudy weather.</p>
+          <span class="label reveal">How it works</span>
+          <h2 id="how-title" class="reveal delay-1">Heat in. Cold out. Stored for the night.</h2>
+          <p class="reveal delay-1">Instead of an electric compressor, Thermoka uses heat to drive its cooling. It stores both heat and cold, so vaccines stay protected overnight and through cloudy weather.</p>
         </div>
-        <div class="split-even split" style="align-items:center">
-          <figure class="diagram-card" style="margin:0">
-          <svg viewBox="0 0 600 440" role="img" aria-labelledby="dgm-title dgm-desc">
+        <div class="split">
+          <figure class="diagram reveal">
+            <svg viewBox="0 0 600 440" role="img" aria-labelledby="dgm-title dgm-desc">
             <title id="dgm-title">How the Thermoka Cooler works</title>
             <desc id="dgm-desc">A solar collector captures heat, which is kept in a hot phase-change store. That heat drives a lithium-bromide absorption cycle. The cold it produces is held in a cold phase-change store that keeps the vaccine chamber between 2 and 8 degrees Celsius. A smart controller supervises the system.</desc>
             <defs>
@@ -87,15 +95,15 @@
             <text x="300" y="93" text-anchor="middle" font-size="12" font-weight="800" fill="#17772a" letter-spacing="1">SMART</text>
             <text x="300" y="108" text-anchor="middle" font-size="12" font-weight="800" fill="#17772a" letter-spacing="1">CONTROL</text>
             <text x="300" y="125" text-anchor="middle" font-size="10.5" font-weight="600" fill="#56655b">PLC + predictive</text>
-            <g stroke="#24a333" stroke-width="2" stroke-dasharray="4 5" fill="none">
+            <g stroke="#24a333" stroke-width="2" stroke-dasharray="4 5" fill="none" class="flow">
               <path d="M300 136v114M360 101h50"/>
             </g>
 
             <!-- Pipes -->
-            <path d="M128 180v82" stroke="#f06a0a" stroke-width="5" fill="none" marker-end="url(#arrow-o)"/>
-            <path d="M190 330h26" stroke="#f06a0a" stroke-width="5" fill="none" marker-end="url(#arrow-o)"/>
-            <path d="M375 330h26" stroke="#0074c7" stroke-width="5" fill="none" marker-end="url(#arrow-b)"/>
-            <path d="M485 270v-52" stroke="#0074c7" stroke-width="5" fill="none" marker-end="url(#arrow-b)"/>
+            <path class="flow" d="M128 180v82" stroke="#f06a0a" stroke-width="5" fill="none" marker-end="url(#arrow-o)"/>
+            <path class="flow" d="M190 330h26" stroke="#f06a0a" stroke-width="5" fill="none" marker-end="url(#arrow-o)"/>
+            <path class="flow" d="M375 330h26" stroke="#0074c7" stroke-width="5" fill="none" marker-end="url(#arrow-b)"/>
+            <path class="flow" d="M485 270v-52" stroke="#0074c7" stroke-width="5" fill="none" marker-end="url(#arrow-b)"/>
 
             <!-- Hot store -->
             <rect x="40" y="270" width="150" height="120" rx="14" fill="#ffe9d9" stroke="#f06a0a" stroke-width="2.5"/>
@@ -155,87 +163,73 @@
           </svg>
             <figcaption>The four stages of the Thermoka system, supervised by a smart controller.</figcaption>
           </figure>
-          <ol class="point-list flow-list">
-            <li>
-              <span class="step-num">1</span>
-              <div>
-                <h3>Collect solar heat</h3>
-                <p>Solar thermal collectors capture heat directly from sunlight.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">2</span>
-              <div>
-                <h3>Bank it in the hot store</h3>
-                <p>Heat is stored in a phase-change material, so the system has energy to draw on after sunset.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">3</span>
-              <div>
-                <h3>Turn heat into cold</h3>
-                <p>A lithium-bromide absorption cycle uses the stored heat to produce cooling — with no mechanical compressor.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-num">4</span>
-              <div>
-                <h3>Hold the vaccines at 2–8 °C</h3>
-                <p>A cold phase-change store keeps the vaccine chamber in range, buffering it against night-time and cloudy days.</p>
-              </div>
-            </li>
+          <ol class="steps">
+            <li class="reveal"><span class="step-num">01</span><div><h3>Collect solar heat</h3><p>Solar thermal collectors capture heat directly from sunlight.</p></div></li>
+            <li class="reveal delay-1"><span class="step-num">02</span><div><h3>Bank it in the hot store</h3><p>Heat is stored in a phase-change material, so there is energy to draw on after sunset.</p></div></li>
+            <li class="reveal delay-2"><span class="step-num">03</span><div><h3>Turn heat into cold</h3><p>A lithium-bromide absorption cycle uses the stored heat to produce cooling, with no mechanical compressor.</p></div></li>
+            <li class="reveal delay-3"><span class="step-num">04</span><div><h3>Hold vaccines at 2–8 °C</h3><p>A cold phase-change store keeps the vaccine chamber in range through the night and on cloudy days.</p></div></li>
           </ol>
         </div>
       </div>
     </section>
 
-    <!-- Design features -->
-    <section class="section section-paper" aria-labelledby="features-title">
+    <section class="section section-green" aria-labelledby="spec-title">
+      <div class="container split" style="align-items:start">
+        <div>
+          <span class="label reveal">Overview</span>
+          <h2 id="spec-title" class="reveal delay-1">Design targets</h2>
+          <p class="reveal delay-1">Thermoka 2.2 is the current design baseline. These are targets for the prototype and will be refined through modelling and testing.</p>
+        </div>
+        <div class="reveal delay-1">
+          <dl class="spec-sheet">
+            <div class="spec-row"><dt>Application</dt><dd>Vaccine and medicine storage in off-grid and rural clinics</dd></div>
+            <div class="spec-row"><dt>Energy source</dt><dd>Solar thermal: heat from sunlight</dd></div>
+            <div class="spec-row"><dt>Cooling cycle</dt><dd>Absorption cycle, lithium bromide (no mechanical compressor)</dd></div>
+            <div class="spec-row"><dt>Thermal storage</dt><dd>Dual phase-change stores: one hot, one cold</dd></div>
+            <div class="spec-row"><dt>Control</dt><dd>Hardwired PLC safety interlocks with a supervisory predictive controller</dd></div>
+            <div class="spec-row"><dt>Storage temperature</dt><dd>2–8 °C</dd></div>
+            <div class="spec-row"><dt>Capacity</dt><dd>Approximately 100 litres (target)</dd></div>
+            <div class="spec-row"><dt>Standard</dt><dd>Designed toward WHO PQS E003</dd></div>
+          </dl>
+          <p class="spec-note">All figures are design targets and may change as development and testing progress.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" aria-labelledby="features-title">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Design features</span>
-          <h2 id="features-title">Engineered for the last mile.</h2>
+          <span class="label reveal">Design features</span>
+          <h2 id="features-title" class="reveal delay-1">Engineered for the last mile</h2>
         </div>
         <div class="features">
-          <div class="feature">
-            <div class="feature-icon fi-orange" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
-            </div>
+          <div class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
             <h3>Absorption cooling</h3>
             <p>A lithium-bromide absorption cycle driven by solar heat replaces the electric compressor found in conventional fridges.</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon fi-orange" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="14" rx="2.5"/><path d="M8 3v3M16 3v3M7.5 15q1.5-2 3 0t3 0 3 0"/></svg>
-            </div>
+          <div class="feature reveal delay-1">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="16" height="14" rx="2.5"/><path d="M8 3v3M16 3v3M7.5 15q1.5-2 3 0t3 0 3 0"/></svg>
             <h3>Hot thermal store</h3>
             <p>A phase-change heat store banks solar energy during the day so the cooling cycle can keep running after sunset.</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon fi-blue" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11"/><path d="M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/></svg>
-            </div>
+          <div class="feature reveal delay-2">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M4.5 6.5l15 11M19.5 6.5l-15 11"/><path d="M9.5 3.5 12 6l2.5-2.5M9.5 20.5 12 18l2.5 2.5"/></svg>
             <h3>Cold thermal store</h3>
             <p>A second phase-change store holds cold around the vaccine chamber, buffering it against gaps in solar supply.</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon fi-green" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg>
-            </div>
+          <div class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4M12 15v2"/></svg>
             <h3>Hardwired safety layer</h3>
-            <p>PLC interlocks sit at the base of the control system, protecting the vaccines and the equipment independently of any software.</p>
+            <p>PLC interlocks sit at the base of the control system, protecting vaccines and equipment independently of any software.</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon fi-green" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/></svg>
-            </div>
+          <div class="feature reveal delay-1">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/></svg>
             <h3>Predictive control</h3>
-            <p>A supervisory controller reads weather forecasts and clinic usage patterns to decide when to prioritise cooling and when to recharge the stores.</p>
+            <p>A supervisory controller reads weather forecasts and clinic usage patterns to decide when to cool and when to recharge the stores.</p>
           </div>
-          <div class="feature">
-            <div class="feature-icon fi-blue" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v7M8.5 11.5h7"/></svg>
-            </div>
+          <div class="feature reveal delay-2">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v7M8.5 11.5h7"/></svg>
             <h3>Built to the standard</h3>
             <p>Designed toward WHO PQS E003, the performance standard for refrigerators used to store vaccines.</p>
           </div>
@@ -243,85 +237,32 @@
       </div>
     </section>
 
-    <!-- Specifications -->
-    <section class="section section-white" aria-labelledby="spec-title">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">Specifications</span>
-          <h2 id="spec-title">Design targets</h2>
-          <p class="text-muted">Thermoka 2.2 is the current design baseline. The figures here are targets for the prototype and will be refined through modelling and testing.</p>
+    <section class="section section-paper" aria-labelledby="roadmap-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="label reveal">Development roadmap</span>
+          <h2 id="roadmap-title" class="reveal delay-1">From design to deployment</h2>
         </div>
-        <div>
-          <table class="spec-table">
-            <tbody>
-              <tr><th scope="row">Application</th><td>Vaccine and medicine storage in off-grid and rural clinics</td></tr>
-              <tr><th scope="row">Energy source</th><td>Solar thermal — heat from sunlight</td></tr>
-              <tr><th scope="row">Cooling cycle</th><td>Absorption cycle, lithium bromide (no mechanical compressor)</td></tr>
-              <tr><th scope="row">Thermal storage</th><td>Dual phase-change stores — one hot, one cold</td></tr>
-              <tr><th scope="row">Control</th><td>Hardwired PLC safety interlocks with a supervisory predictive controller</td></tr>
-              <tr><th scope="row">Storage temperature</th><td>2–8 °C</td></tr>
-              <tr><th scope="row">Capacity</th><td>Approximately 100 litres (target)</td></tr>
-              <tr><th scope="row">Standard</th><td>Designed toward WHO PQS E003</td></tr>
-            </tbody>
-          </table>
-          <p class="spec-note">All figures are design targets and may change as development and testing progress.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Roadmap -->
-    <section class="section section-dark" aria-labelledby="roadmap-title">
-      <div class="container split">
-        <div>
-          <span class="eyebrow">Development roadmap</span>
-          <h2 id="roadmap-title">From design to deployment.</h2>
-          <p>Thermoka is moving from paper to prototype, with funding secured through the Technology Innovation Agency's Grassroots Innovation Programme.</p>
-        </div>
-        <ol class="timeline">
-          <li class="done">
-            <span class="status">Completed</span>
-            <h3>Thermoka 2.1</h3>
-            <p>First design revision of the solar-thermal absorption cooler.</p>
-          </li>
-          <li class="current">
-            <span class="status">Current design</span>
-            <h3>Thermoka 2.2</h3>
-            <p>Revised design with a lithium-bromide cycle, dual hot and cold storage, and a tiered control system.</p>
-          </li>
-          <li>
-            <span class="status">Funded</span>
-            <h3>Working prototype</h3>
-            <p>Building the first working Thermoka, supported by TIA with Red Village Trading as implementing partner.</p>
-          </li>
-          <li>
-            <span class="status">Planned</span>
-            <h3>Testing toward WHO PQS E003</h3>
-            <p>Performance testing against the WHO standard for vaccine refrigerators.</p>
-          </li>
-          <li>
-            <span class="status">Goal</span>
-            <h3>Clinics across the Global South</h3>
-            <p>Reliable, grid-independent vaccine storage in off-grid and rural clinics — in South Africa and beyond.</p>
-          </li>
+        <ol class="roadmap">
+          <li class="done reveal"><span class="status">Completed</span><h3>Thermoka 2.1</h3><p>First design revision of the solar-thermal absorption cooler.</p></li>
+          <li class="current reveal delay-1"><span class="status">Current design</span><h3>Thermoka 2.2</h3><p>Lithium-bromide cycle, dual hot and cold storage, tiered control.</p></li>
+          <li class="reveal delay-2"><span class="status">Funded</span><h3>Working prototype</h3><p>Supported by TIA, with Red Village Trading as implementing partner.</p></li>
+          <li class="reveal delay-3"><span class="status">Planned</span><h3>WHO PQS testing</h3><p>Performance testing against the WHO standard for vaccine refrigerators.</p></li>
+          <li class="reveal delay-3"><span class="status">Goal</span><h3>Clinics</h3><p>Grid-independent vaccine storage across the Global South.</p></li>
         </ol>
       </div>
     </section>
-
-    <!-- CTA -->
-    <section class="section section-white">
-      <div class="container">
-        <div class="cta-band">
-          <div>
-            <h2>Want to help build it?</h2>
-            <p>We're talking to partners, funders, health programmes and engineers. Let's start a conversation.</p>
-          </div>
-          <div class="btn-row">
-            <a class="btn btn-light" href="contact.html">Contact us</a>
-          </div>
+    <section class="panel ph-blue panel-center panel-short" style="--photo:url('assets/img/photos/vaccines.jpg');--photo-pos:center">
+      <div class="panel-bg" aria-hidden="true"></div>
+      <div class="container panel-content">
+        <div class="panel-text">
+          <span class="label reveal">Build it with us</span>
+          <h2 class="reveal delay-1">Want to help take Thermoka to clinics?</h2>
+          <p class="reveal delay-1">We're talking to partners, funders, health programmes and engineers.</p>
+          <div class="btn-row reveal delay-2"><a class="btn btn-white" href="contact.html">Contact us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
@@ -329,7 +270,7 @@
       <div class="footer-grid">
         <div>
           <div class="footer-brand">
-            <img src="assets/img/mark.png" alt="" width="52" height="52">
+            <img src="assets/img/mark.png" alt="" width="54" height="54">
             <span class="brand-text"><strong>THERMOKA</strong><span>GREEN ENERGY</span></span>
           </div>
           <p>Solar-thermal cold storage for off-grid and rural clinics across the Global South.</p>
@@ -347,13 +288,13 @@
           <h4>Contact</h4>
           <ul>
             <li><a href="mailto:gofaonemokalabae38@gmail.com">gofaonemokalabae38@gmail.com</a></li>
-            <li>Pampierstad, Northern Cape</li>
-            <li>South Africa</li>
+            <li>Pampierstad, Northern Cape, South Africa</li>
+            <li>Local time: <span class="footer-clock" data-clock="time">--:--:--</span> SAST</li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Thermoka Green Energy (Pty) Ltd. All rights reserved.</span>
+        <span>© 2026 Thermoka Green Energy (Pty) Ltd</span>
         <span>Proudly developed in the Northern Cape, South Africa</span>
       </div>
     </div>
