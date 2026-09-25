@@ -35,3 +35,7 @@ The header and footer are repeated on every page. If you change them, change the
    - Four **A** records for `@` pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153` and `185.199.111.153`
    - One **CNAME** record for `www` pointing to `<your-username>.github.io`
 3. In **Settings → Pages → Custom domain**, enter the domain and save. Once the certificate is ready, tick **Enforce HTTPS**.
+
+## Copyright
+
+© 2026 Thermoka Green Energy (Pty) Ltd. All rights reserved. See [LICENSE](LICENSE). The code is public only so the site can be hosted on GitHub Pages; it may not be copied or reused without written permission.
