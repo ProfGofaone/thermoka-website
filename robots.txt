@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thermokagreenenergy.co.za/sitemap.xml
