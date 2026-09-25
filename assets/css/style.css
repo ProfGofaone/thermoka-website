@@ -723,3 +723,22 @@ main section[id] { scroll-margin-top: 84px; }
 .hero-home .container { position: relative; }
 .hero-home .hero-grid { margin-top: 2.4rem; align-items: center; }
 .hero-home .hero-lead { margin-top: 0; }
+
+/* Mobile menu fix: the header's blur (backdrop-filter) traps the fixed
+   menu inside the header bar once the page is scrolled. Switch the blur
+   off while the menu is open so the menu covers the whole screen. */
+body.menu-open .site-header,
+body.menu-open .site-header.scrolled {
+  -webkit-backdrop-filter: none; backdrop-filter: none;
+  background: transparent; border-bottom-color: transparent;
+}
+@media (max-width: 1180px) {
+  .nav { height: 100vh; height: 100dvh; overflow-y: auto; }
+  .nav a:not(.nav-cta) {
+    width: 100%; padding: 14px 0; opacity: .9;
+    border-bottom: 1px solid rgba(255,255,255,.12);
+  }
+  .nav a[aria-current]::after { bottom: -1px; right: auto; width: 64px; }
+  .nav { gap: 0; justify-content: flex-start; padding-top: 120px; }
+  .nav .nav-cta { margin-top: 2rem; }
+}
