@@ -108,8 +108,7 @@ p { margin: 0 0 1em; }
   color: #fff;
 }
 .site-header.scrolled {
-  background: rgba(245, 250, 246, .92);
-  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  background: rgba(245, 250, 246, .98);
   border-bottom-color: var(--line);
   color: var(--ink);
 }
