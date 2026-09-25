@@ -12,9 +12,7 @@
   <meta property="og:image" content="https://thermokagreenenergy.co.za/assets/img/logo-full.png">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -42,15 +40,17 @@
   </header>
 
     <section class="hero hero-page">
-      <div class="container">
+      <div class="container hero-grid">
+        <div>
         <span class="label on-dark reveal">Partner with us</span>
         <h1 class="reveal d1">The technology is taking shape.<br><span class="accent">Are you in?</span></h1>
         <p class="hero-lead reveal d2">Pick the conversation that fits and your email app will open with a subject line ready. Every message reaches the founder directly.</p>
         
-        <div class="status-line reveal d3" aria-label="Local time in Pampierstad, South Africa">
-          <span><span class="live-dot" aria-hidden="true"></span>Pampierstad, Northern Cape</span>
-          <span><b data-clock="date">&nbsp;</b></span>
-          <span><b data-clock="time">--:--:--</b> SAST</span>
+        </div>
+        <div class="clock-panel reveal d2" aria-label="Live local time in Pampierstad, South Africa">
+          <div class="clock-k"><span class="live-dot" aria-hidden="true"></span>Live · Pampierstad, Northern Cape</div>
+          <div class="clock-big" data-clock="big">--:--<span class="sec">--</span></div>
+          <div class="clock-meta"><span data-clock="date">&nbsp;</span><span class="tz">SAST · UTC+2</span></div>
         </div>
       </div>
     </section>

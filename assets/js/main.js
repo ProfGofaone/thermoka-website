@@ -51,6 +51,14 @@ document.documentElement.classList.add('js');
   });
   var timeEls = document.querySelectorAll('[data-clock="time"]');
   var dateEls = document.querySelectorAll('[data-clock="date"]');
+  var bigEls = document.querySelectorAll('[data-clock="big"]');
+
+  // Big clock: every digit in a fixed-width box so it doesn't jitter
+  function digits(str) {
+    return str.split('').map(function (ch) {
+      return ch === ':' ? '<span class="c">:</span>' : '<span class="d">' + ch + '</span>';
+    }).join('');
+  }
 
   function tick() {
     var now = new Date();
@@ -58,8 +66,13 @@ document.documentElement.classList.add('js');
     var d = dateFmt.format(now).replace(/,/g, '');
     timeEls.forEach(function (el) { el.textContent = t; });
     dateEls.forEach(function (el) { el.textContent = d; });
+    if (bigEls.length) {
+      var parts = t.split(':');
+      var html = digits(parts[0] + ':' + parts[1]) + '<span class="sec">' + digits(parts[2]) + '</span>';
+      bigEls.forEach(function (el) { el.innerHTML = html; el.setAttribute('aria-label', t + ' South African time'); });
+    }
   }
-  if (timeEls.length || dateEls.length) {
+  if (timeEls.length || dateEls.length || bigEls.length) {
     tick();
     setInterval(tick, 1000);
   }

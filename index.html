@@ -12,9 +12,7 @@
   <meta property="og:image" content="https://thermokagreenenergy.co.za/assets/img/logo-full.png">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/bebas-neue-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -43,7 +41,8 @@
 
   <main id="main">
     <section class="hero">
-      <div class="container">
+      <div class="container hero-grid">
+        <div>
         <span class="label on-dark reveal">Thermoka Green Energy (Pty) Ltd</span>
         <h1 class="reveal d1">Engineering energy <span class="accent">sovereignty</span> for Africa<span class="dot">.</span></h1>
         <p class="hero-lead reveal d2">Three innovations from the Northern Cape: last-mile vaccine cold storage that runs on the sun, industrial heat recovery, and optical communications that survive the atmosphere.</p>
@@ -56,10 +55,11 @@
           <a class="btn btn-primary" href="innovations.html">Explore our innovations <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn-ghost" href="contact.html">Partner with us</a>
         </div>
-        <div class="status-line reveal d3" aria-label="Local time in Pampierstad, South Africa">
-          <span><span class="live-dot" aria-hidden="true"></span>Pampierstad, Northern Cape</span>
-          <span><b data-clock="date">&nbsp;</b></span>
-          <span><b data-clock="time">--:--:--</b> SAST</span>
+        </div>
+        <div class="clock-panel reveal d2" aria-label="Live local time in Pampierstad, South Africa">
+          <div class="clock-k"><span class="live-dot" aria-hidden="true"></span>Live · Pampierstad, Northern Cape</div>
+          <div class="clock-big" data-clock="big">--:--<span class="sec">--</span></div>
+          <div class="clock-meta"><span data-clock="date">&nbsp;</span><span class="tz">SAST · UTC+2</span></div>
         </div>
       </div>
       <a class="scroll-cue" href="#problems" aria-label="Scroll down">Scroll <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
